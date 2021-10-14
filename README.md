@@ -31,17 +31,20 @@ backend:
 
 ## Deploy
 
-- Create an OAuth App on GitHub and GitLab
-- Set `Authorization callback URL` URL of your deployded OAuth website
-- Set environment variables on `Vercel`
-
-    ```shell
-    OAUTH_GITHUB_CLIENT_ID=<you-client-id>
-    OAUTH_GITHUB_CLIENT_SECRET=<you-client-secret>
-
-    OAUTH_GITLAB_CLIENT_ID=<you-client-id>
-    OAUTH_GITLAB_CLIENT_SECRET=<you-client-secret>
-    ```
+1. Deploy the OAuth serverless functions to your Vercel account
+2. Create an OAuth App on [GitHub](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) or [GitLab](https://docs.gitlab.com/ee/integration/oauth_provider.html)
+3. Set the _"Authorization callback URL"_ (GitHub) or the _"Redirect URI"_ (GitLab) to your deployded OAuth website callback endpoint: `https://<your-oauth-project>.vercel.app/callback`
+4. Set environment variables on `Vercel`
+   - For GitHub:
+     ```shell
+     OAUTH_GITHUB_CLIENT_ID=<your-client-id>
+     OAUTH_GITHUB_CLIENT_SECRET=<your-client-secret>
+     ```
+   - For GitLab:
+     ```shell
+     OAUTH_GITLAB_CLIENT_ID=<your-client-id>
+     OAUTH_GITLAB_CLIENT_SECRET=<your-client-secret>
+     ```
 
 ## Authors
 
