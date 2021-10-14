@@ -14,7 +14,7 @@ If you would like to use Netlify CMS to manage your site deployed to Vercel.
    - For GitHub: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnop33%2Fnetlify-cms-oauth&env=OAUTH_GITHUB_CLIENT_ID,OAUTH_GITHUB_CLIENT_SECRET&envDescription=GitHub%20OAuth%20application%20env%20variables&envLink=https%3A%2F%2Fdocs.github.com%2Fen%2Fdevelopers%2Fapps%2Fbuilding-oauth-apps%2Fcreating-an-oauth-app&project-name=netlify-cms-oauth&repo-name=netlify-cms-oauth)
    - For GitLab: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnop33%2Fnetlify-cms-oauth&env=OAUTH_GITLAB_CLIENT_ID,OAUTH_GITLAB_CLIENT_SECRET&envDescription=GitLab%20OAuth%20application%20env%20variables&envLink=https%3A%2F%2Fdocs.gitlab.com%2Fee%2Fintegration%2Foauth_provider.html&project-name=netlify-cms-oauth&repo-name=netlify-cms-oauth)
 2. Create an OAuth App on [GitHub](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) or [GitLab](https://docs.gitlab.com/ee/integration/oauth_provider.html)
-3. Set the _"Authorization callback URL"_ (GitHub) or the _"Redirect URI"_ (GitLab) to your deployded OAuth website callback endpoint: `https://<your-oauth-project>.vercel.app/callback`
+3. Set the _"Authorization callback URL"_ (GitHub) or the _"Redirect URI"_ (GitLab) to your deployed OAuth website callback endpoint: `https://<your-oauth-project>.vercel.app/callback`
 4. Set environment variables on `Vercel`
    - For GitHub:
      ```shell
