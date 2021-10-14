@@ -15,24 +15,24 @@
 
 If you would like to use Netlify CMS to manage your site deployed to Vercel.
 
-[GitHub](https://github.com) and [Gitlab](https://gitlab.com) requires a server for authentication and Netlify provides this server only for sites deployed to it. Fortunately, such server is rather small and can work with Vercel's serverless functions.
+[GitHub](https://github.com) and [GitLab](https://gitlab.com) require a server for authentication and Netlify provides this server only for sites deployed to it. Fortunately, such server is rather small and can work with Vercel's serverless functions.
 
 ## Usage
 
-In yours projects modify `config.yml` file:
+In your projects modify the `config.yml` file:
 
 ```yaml
 backend:
   name: [github | gitlab]
-  repo: adrian-ub/adrian-ub # Path to your Github/Gitlab repository
+  repo: adrian-ub/adrian-ub # Path to your GitHub/GitLab repository
   branch: main # Branch to update
   base_url: https://netlify-cms.adrianub.vercel.app
 ```
 
 ## Deploy
 
-- Create a OAuth App on Github and Gitlab
-- Set `Authorization callback URL` url of your oauth website deployed
+- Create an OAuth App on GitHub and GitLab
+- Set `Authorization callback URL` URL of your deployded OAuth website
 - Set environment variables on `Vercel`
 
     ```shell
